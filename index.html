@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qrecords — Independent Record Label | Artist Development &amp; Music Production</title>
+  <meta name="description" content="Qrecords is an independent-minded record label empowering exceptional artists, ambitious producers, and the next generation of music. Artist development, production, distribution and release strategy." />
+  <meta property="og:title" content="Qrecords — We Shape the Sound of What's Next" />
+  <meta property="og:description" content="An independent-minded record label empowering exceptional artists and the next generation of music." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1200&q=70" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Archivo:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="20" fill="%230b0b0e"/><circle cx="50" cy="50" r="30" fill="none" stroke="%238b5cf6" stroke-width="10"/><line x1="62" y1="62" x2="84" y2="84" stroke="%238b5cf6" stroke-width="12" stroke-linecap="round"/></svg>' />
+</head>
+<body>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a href="index.html" class="nav__logo" aria-label="Qrecords home">
+        <svg class="nav__qmark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+          <circle cx="50" cy="50" r="34" fill="none" stroke="currentColor" stroke-width="11"/>
+          <line x1="63" y1="63" x2="88" y2="88" stroke="currentColor" stroke-width="13" stroke-linecap="round"/>
+        </svg>
+        <span class="nav__word">Qrecords</span>
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link is-active">Home</a></li>
+        <li><a href="#artists" class="nav__link">Artists</a></li>
+        <li><a href="#releases" class="nav__link">Releases</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+        <li><a href="submit.html" class="btn btn--accent nav__cta">Submit Your Music</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=2000&q=80"
+             alt="" class="hero__img" fetchpriority="high" />
+        <div class="hero__beam hero__beam--1"></div>
+        <div class="hero__beam hero__beam--2"></div>
+        <div class="hero__vignette"></div>
+        <div class="hero__grain"></div>
+      </div>
+
+      <div class="hero__content container">
+        <p class="hero__eyebrow reveal"><span class="tick" aria-hidden="true"></span> Independent Record Label</p>
+        <h1 class="hero__title">
+          <span class="line"><span class="line__inner">WE SHAPE</span></span>
+          <span class="line"><span class="line__inner">THE SOUND OF</span></span>
+          <span class="line"><span class="line__inner accent">WHAT&rsquo;S NEXT.</span></span>
+        </h1>
+        <p class="hero__sub reveal">An independent-minded record label empowering exceptional artists,
+        ambitious producers, and the next generation of music.</p>
+        <div class="hero__actions reveal">
+          <a href="#artists" class="btn btn--accent btn--lg">Explore Our Artists</a>
+          <a href="submit.html" class="btn btn--ghost btn--lg">Submit Your Music</a>
+        </div>
+      </div>
+
+      <a href="#artists" class="hero__scroll" aria-label="Scroll to artists section">
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+        <span class="hero__scroll-text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Artist Development</span><span class="dot"></span>
+        <span>Record Production</span><span class="dot"></span>
+        <span>Global Distribution</span><span class="dot"></span>
+        <span>Release Strategy</span><span class="dot"></span>
+        <span>Creative Direction</span><span class="dot"></span>
+        <span>Artist Development</span><span class="dot"></span>
+        <span>Record Production</span><span class="dot"></span>
+        <span>Global Distribution</span><span class="dot"></span>
+        <span>Release Strategy</span><span class="dot"></span>
+        <span>Creative Direction</span><span class="dot"></span>
+      </div>
+    </div>
+
+    <!-- ================= ARTISTS ================= -->
+    <section class="section artists" id="artists">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Roster</p>
+          <h2 class="section__title">FEATURED <span class="accent">ARTISTS</span></h2>
+          <p class="section__note">Sample artist profiles shown as placeholders — replace with your signed roster.</p>
+        </div>
+
+        <div class="artists__grid">
+          <article class="artist-card artist-card--tall reveal">
+            <div class="artist-card__media">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80" alt="Portrait of Nara Velvet, alt-R&amp;B artist" loading="lazy" />
+              <div class="artist-card__overlay">
+                <div class="artist-card__socials">
+                  <a href="https://open.spotify.com" target="_blank" rel="noopener" aria-label="Nara Velvet on Spotify">Spotify</a>
+                  <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Nara Velvet on YouTube">YouTube</a>
+                  <a href="https://music.apple.com" target="_blank" rel="noopener" aria-label="Nara Velvet on Apple Music">Apple&nbsp;Music</a>
+                </div>
+              </div>
+            </div>
+            <div class="artist-card__body">
+              <span class="artist-card__genre">Alt-R&amp;B / Soul</span>
+              <h3 class="artist-card__name">NARA VELVET</h3>
+              <p class="artist-card__desc">Sample profile — smoky vocals and late-night textures built for dim-lit stages and global playlists.</p>
+            </div>
+          </article>
+
+          <article class="artist-card reveal">
+            <div class="artist-card__media">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80" alt="Portrait of Kaiser Dyn, hip-hop artist" loading="lazy" />
+              <div class="artist-card__overlay">
+                <div class="artist-card__socials">
+                  <a href="https://open.spotify.com" target="_blank" rel="noopener" aria-label="Kaiser Dyn on Spotify">Spotify</a>
+                  <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Kaiser Dyn on YouTube">YouTube</a>
+                  <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Kaiser Dyn on Instagram">Instagram</a>
+                </div>
+              </div>
+            </div>
+            <div class="artist-card__body">
+              <span class="artist-card__genre">Hip-Hop / Grime</span>
+              <h3 class="artist-card__name">KAISER DYN</h3>
+              <p class="artist-card__desc">Sample profile — razor-sharp bars over heavyweight, cinematic production.</p>
+            </div>
+          </article>
+
+          <article class="artist-card reveal">
+            <div class="artist-card__media">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=900&q=80" alt="Portrait of Mira Solace, electronic artist" loading="lazy" />
+              <div class="artist-card__overlay">
+                <div class="artist-card__socials">
+                  <a href="https://open.spotify.com" target="_blank" rel="noopener" aria-label="Mira Solace on Spotify">Spotify</a>
+                  <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Mira Solace on YouTube">YouTube</a>
+                </div>
+              </div>
+            </div>
+            <div class="artist-card__body">
+              <span class="artist-card__genre">Electronica / Ambient</span>
+              <h3 class="artist-card__name">MIRA SOLACE</h3>
+              <p class="artist-card__desc">Sample profile — immersive soundscapes where analog warmth meets digital precision.</p>
+            </div>
+          </article>
+
+          <article class="artist-card artist-card--wide reveal">
+            <div class="artist-card__media">
+              <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1400&q=80" alt="The Hollow Frequency performing live on stage" loading="lazy" />
+              <div class="artist-card__overlay">
+                <div class="artist-card__socials">
+                  <a href="https://open.spotify.com" target="_blank" rel="noopener" aria-label="The Hollow Frequency on Spotify">Spotify</a>
+                  <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="The Hollow Frequency on YouTube">YouTube</a>
+                  <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="The Hollow Frequency on Instagram">Instagram</a>
+                </div>
+              </div>
+            </div>
+            <div class="artist-card__body">
+              <span class="artist-card__genre">Indie Rock / Post-Punk</span>
+              <h3 class="artist-card__name">THE HOLLOW FREQUENCY</h3>
+              <p class="artist-card__desc">Sample profile — a four-piece built on driving basslines, anthemic choruses and relentless live energy.</p>
+            </div>
+          </article>
+
+          <article class="artist-card reveal">
+            <div class="artist-card__media">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=900&q=80" alt="Portrait of Juno Grey, singer-songwriter" loading="lazy" />
+              <div class="artist-card__overlay">
+                <div class="artist-card__socials">
+                  <a href="https://open.spotify.com" target="_blank" rel="noopener" aria-label="Juno Grey on Spotify">Spotify</a>
+                  <a href="https://music.apple.com" target="_blank" rel="noopener" aria-label="Juno Grey on Apple Music">Apple&nbsp;Music</a>
+                </div>
+              </div>
+            </div>
+            <div class="artist-card__body">
+              <span class="artist-card__genre">Folk / Indie</span>
+              <h3 class="artist-card__name">JUNO GREY</h3>
+              <p class="artist-card__desc">Sample profile — intimate storytelling wrapped in raw, unpolished beauty.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RELEASES ================= -->
+    <section class="section section--alt releases" id="releases">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Catalog</p>
+          <h2 class="section__title">LATEST <span class="accent">RELEASES</span></h2>
+          <p class="section__note">Sample artwork and titles — swap in your real release artwork and streaming links.</p>
+        </div>
+
+        <div class="releases__grid">
+          <article class="release-card reveal">
+            <div class="release-card__art">
+              <img src="https://images.unsplash.com/photo-1485579149621-3123dd979885?auto=format&fit=crop&w=700&q=80" alt="Album artwork — Neon Requiem by Nara Velvet" loading="lazy" />
+              <a href="https://open.spotify.com" target="_blank" rel="noopener" class="release-card__play" aria-label="Listen to Neon Requiem on Spotify">Listen&nbsp;Now</a>
+            </div>
+            <div class="release-card__meta">
+              <span class="release-card__type">Album</span>
+              <h3 class="release-card__title">Neon Requiem</h3>
+              <p class="release-card__artist">Nara Velvet</p>
+              <p class="release-card__date">Oct 2026</p>
+            </div>
+          </article>
+
+          <article class="release-card reveal">
+            <div class="release-card__art">
+              <img src="https://images.unsplash.com/photo-1483412033650-1015ddeb83d1?auto=format&fit=crop&w=700&q=80" alt="Single artwork — Static Bloom by Mira Solace" loading="lazy" />
+              <a href="https://open.spotify.com" target="_blank" rel="noopener" class="release-card__play" aria-label="Listen to Static Bloom on Spotify">Listen&nbsp;Now</a>
+            </div>
+            <div class="release-card__meta">
+              <span class="release-card__type">Single</span>
+              <h3 class="release-card__title">Static Bloom</h3>
+              <p class="release-card__artist">Mira Solace</p>
+              <p class="release-card__date">Sep 2026</p>
+            </div>
+          </article>
+
+          <article class="release-card reveal">
+            <div class="release-card__art">
+              <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=700&q=80" alt="Single artwork — Concrete Hymns by Kaiser Dyn" loading="lazy" />
+              <a href="https://youtube.com" target="_blank" rel="noopener" class="release-card__play" aria-label="Listen to Concrete Hymns on YouTube">Listen&nbsp;Now</a>
+            </div>
+            <div class="release-card__meta">
+              <span class="release-card__type">Single</span>
+              <h3 class="release-card__title">Concrete Hymns</h3>
+              <p class="release-card__artist">Kaiser Dyn</p>
+              <p class="release-card__date">Aug 2026</p>
+            </div>
+          </article>
+
+          <article class="release-card reveal">
+            <div class="release-card__art">
+              <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=700&q=80" alt="Live EP artwork — Live at the Hollow by The Hollow Frequency" loading="lazy" />
+              <a href="https://youtube.com" target="_blank" rel="noopener" class="release-card__play" aria-label="Listen to Live at the Hollow on YouTube">Listen&nbsp;Now</a>
+            </div>
+            <div class="release-card__meta">
+              <span class="release-card__type">Live EP</span>
+              <h3 class="release-card__title">Live at the Hollow</h3>
+              <p class="release-card__artist">The Hollow Frequency</p>
+              <p class="release-card__date">Jul 2026</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1000&q=80"
+               alt="Music producer working in a recording studio" loading="lazy" />
+          <div class="about__badge" aria-hidden="true">
+            <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="34" fill="none" stroke="currentColor" stroke-width="11"/><line x1="63" y1="63" x2="88" y2="88" stroke="currentColor" stroke-width="13" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div class="about__copy reveal">
+          <p class="section__eyebrow">About the Label</p>
+          <h2 class="section__title">BUILT AROUND ARTISTS.<br />DRIVEN BY <span class="accent">SOUND.</span></h2>
+          <p>Qrecords exists for one reason: to help remarkable music find the audience it deserves.
+          We work shoulder-to-shoulder with artists on development, production, and release strategy —
+          protecting creative independence at every step.</p>
+          <p>From first demo to worldwide release, we build long-term careers, not one-off moments.
+          High-quality masters, deliberate rollouts, and partnerships that serve the art first.</p>
+          <ul class="about__stats">
+            <li><strong data-count="1">1</strong><span>Obsession:<br />the music</span></li>
+            <li><strong data-count="360">360&deg;</strong><span>Artist-first<br />approach</span></li>
+            <li><strong data-count="100">100%</strong><span>Creative<br />independence</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section section--alt services" id="services">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Capabilities</p>
+          <h2 class="section__title">WHAT WE <span class="accent">DO</span></h2>
+          <p class="section__note">Placeholder service descriptions — tailor to your label&rsquo;s actual offering.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="service-card reveal">
+            <svg class="service-card__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 36c6-2 8-8 9-14 1 6 3 12 9 14 6 2 12-1 18-4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
+            <h3>Artist Development</h3>
+            <p>Sound, image, and strategy shaped together — from early demos to a defined artistic identity.</p>
+          </article>
+          <article class="service-card reveal">
+            <svg class="service-card__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="6" width="28" height="36" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="24" cy="20" r="6" fill="none" stroke="currentColor" stroke-width="2.5"/><line x1="20" y1="20" x2="28" y2="20" stroke="currentColor" stroke-width="2.5"/></svg>
+            <h3>Record Production</h3>
+            <p>Production, mixing and mastering workflows aimed at competitive, release-ready sound.</p>
+          </article>
+          <article class="service-card reveal">
+            <svg class="service-card__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M24 8v32M8 24h32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="24" r="4" fill="currentColor"/></svg>
+            <h3>Music Distribution</h3>
+            <p>Digital delivery to streaming platforms and stores worldwide, with metadata done right.</p>
+          </article>
+          <article class="service-card reveal">
+            <svg class="service-card__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40V24M18 40V16M28 40V28M38 40V10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+            <h3>Marketing &amp; Promotion</h3>
+            <p>Playlist pitching, press outreach, and content strategy that builds real momentum.</p>
+          </article>
+          <article class="service-card reveal">
+            <svg class="service-card__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M24 8l4 10 10 6-10 6-4 10-4-10-10-6 10-6z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Creative Direction</h3>
+            <p>Cover art, visuals, and campaign worlds designed to match the music, not mask it.</p>
+          </article>
+          <article class="service-card reveal">
+            <svg class="service-card__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="12" width="26" height="24" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M32 20l10-5v18l-10-5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/></svg>
+            <h3>Music Video Production</h3>
+            <p>Concept-to-delivery video content that gives every release a cinematic dimension.</p>
+          </article>
+          <article class="service-card reveal">
+            <svg class="service-card__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M24 12v12l8 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Release Strategy</h3>
+            <p>Singles, EPs or albums — sequenced, scheduled, and rolled out with intent.</p>
+          </article>
+          <article class="service-card reveal">
+            <svg class="service-card__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="14" cy="24" r="7" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="34" cy="14" r="7" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="34" cy="34" r="7" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M20 20l8-4M20 28l8 4" stroke="currentColor" stroke-width="2.5"/></svg>
+            <h3>Industry Partnerships</h3>
+            <p>Sync, publishing, and booking connections built around each artist&rsquo;s goals.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Voices</p>
+          <h2 class="section__title">FROM THE <span class="accent">ROSTER</span></h2>
+        </div>
+
+        <div class="testimonials__grid">
+          <figure class="quote-card reveal">
+            <blockquote>&ldquo;[ Placeholder testimonial — replace with a verified quote from an artist on the Qrecords roster. ]&rdquo;</blockquote>
+            <figcaption><span class="quote-card__avatar" aria-hidden="true">?</span> Artist Name — Placeholder</figcaption>
+          </figure>
+          <figure class="quote-card reveal">
+            <blockquote>&ldquo;[ Placeholder testimonial — share how development, production or a release campaign made a difference. ]&rdquo;</blockquote>
+            <figcaption><span class="quote-card__avatar" aria-hidden="true">?</span> Producer Name — Placeholder</figcaption>
+          </figure>
+          <figure class="quote-card reveal">
+            <blockquote>&ldquo;[ Placeholder testimonial — a short line about creative independence and support. ]&rdquo;</blockquote>
+            <figcaption><span class="quote-card__avatar" aria-hidden="true">?</span> Songwriter Name — Placeholder</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta" id="cta">
+      <div class="cta__beam" aria-hidden="true"></div>
+      <div class="container cta__inner reveal">
+        <h2 class="cta__title">YOUR SOUND DESERVES<br /><span class="accent">A BIGGER STAGE.</span></h2>
+        <p class="cta__sub">Have a release in mind or a vision worth building? Let&rsquo;s start a conversation.</p>
+        <div class="cta__actions">
+          <a href="submit.html" class="btn btn--accent btn--lg">Submit Your Music</a>
+          <a href="#contact" class="btn btn--ghost btn--lg">Contact Qrecords</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section section--alt contact" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info reveal">
+          <p class="section__eyebrow">Contact</p>
+          <h2 class="section__title">START A<br /><span class="accent">CONVERSATION</span></h2>
+          <p>Management, partnerships, press, or general enquiries — drop us a line and we&rsquo;ll get back to you.</p>
+          <ul class="contact__details">
+            <li><span>General</span><a href="mailto:hello@qrecords.example">hello@qrecords.example</a></li>
+            <li><span>Submissions</span><a href="mailto:artists@qrecords.example">artists@qrecords.example</a></li>
+            <li><span>Press</span><a href="mailto:press@qrecords.example">press@qrecords.example</a></li>
+            <li><span>Social</span><a href="https://instagram.com" target="_blank" rel="noopener">@qrecords</a></li>
+          </ul>
+          <p class="contact__placeholder-note">Placeholder contact details — replace with your real business information.</p>
+        </div>
+
+        <form class="form contact__form reveal" id="contactForm" novalidate>
+          <div class="form__row">
+            <div class="form__field">
+              <label for="contactName">Name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="contactName" name="name" autocomplete="name" required minlength="2" />
+              <p class="form__error" role="alert" hidden></p>
+            </div>
+            <div class="form__field">
+              <label for="contactEmail">Email <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="contactEmail" name="email" autocomplete="email" required />
+              <p class="form__error" role="alert" hidden></p>
+            </div>
+          </div>
+          <div class="form__field">
+            <label for="contactSubject">Subject <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="contactSubject" name="subject" required minlength="3" />
+            <p class="form__error" role="alert" hidden></p>
+          </div>
+          <div class="form__field">
+            <label for="contactMessage">Message <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="contactMessage" name="message" rows="5" required minlength="10"></textarea>
+            <p class="form__error" role="alert" hidden></p>
+          </div>
+          <button type="submit" class="btn btn--accent btn--lg form__submit">
+            <span class="btn__label">Send Message</span>
+            <span class="btn__spinner" aria-hidden="true"></span>
+          </button>
+          <div class="form__success" role="status" hidden>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="3"/><path d="M14 25l7 7 13-15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Message sent — thank you!</h3>
+            <p>This demo form is not yet connected to a backend. Connect a form service before using it in production.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo" aria-label="Qrecords home">
+          <svg class="nav__qmark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+            <circle cx="50" cy="50" r="34" fill="none" stroke="currentColor" stroke-width="11"/>
+            <line x1="63" y1="63" x2="88" y2="88" stroke="currentColor" stroke-width="13" stroke-linecap="round"/>
+          </svg>
+          <span class="nav__word">Qrecords</span>
+        </a>
+        <p>An independent-minded record label built around artists and driven by sound.</p>
+      </div>
+      <nav class="footer__col" aria-label="Footer navigation">
+        <h4>Explore</h4>
+        <a href="#home">Home</a>
+        <a href="#artists">Artists</a>
+        <a href="#releases">Releases</a>
+        <a href="#about">About</a>
+        <a href="submit.html">Submit Your Music</a>
+      </nav>
+      <nav class="footer__col" aria-label="Social links">
+        <h4>Follow</h4>
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://open.spotify.com" target="_blank" rel="noopener">Spotify</a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener">TikTok</a>
+      </nav>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="mailto:hello@qrecords.example">hello@qrecords.example</a>
+        <p>City, Country — placeholder address</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year">2026</span> Qrecords. All rights reserved.</p>
+      <p class="footer__legal"><a href="#">Privacy Policy</a> · <a href="#">Terms</a></p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

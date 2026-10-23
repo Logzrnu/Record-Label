@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit Your Music — Qrecords | Artist Submissions</title>
+  <meta name="description" content="Submit your music to Qrecords. Artist and producer submissions for an independent-minded record label." />
+  <meta property="og:title" content="Submit Your Music — Qrecords" />
+  <meta property="og:description" content="Have a release in mind or a vision worth building? Submit your music to Qrecords." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Archivo:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="20" fill="%230b0b0e"/><circle cx="50" cy="50" r="30" fill="none" stroke="%238b5cf6" stroke-width="10"/><line x1="62" y1="62" x2="84" y2="84" stroke="%238b5cf6" stroke-width="12" stroke-linecap="round"/></svg>' />
+</head>
+<body>
+
+  <header class="site-header is-solid" id="siteHeader">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a href="index.html" class="nav__logo" aria-label="Qrecords home">
+        <svg class="nav__qmark" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+          <circle cx="50" cy="50" r="34" fill="none" stroke="currentColor" stroke-width="11"/>
+          <line x1="63" y1="63" x2="88" y2="88" stroke="currentColor" stroke-width="13" stroke-linecap="round"/>
+        </svg>
+        <span class="nav__word">Qrecords</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="index.html#home" class="nav__link">Home</a></li>
+        <li><a href="index.html#artists" class="nav__link">Artists</a></li>
+        <li><a href="index.html#releases" class="nav__link">Releases</a></li>
+        <li><a href="index.html#about" class="nav__link">About</a></li>
+        <li><a href="index.html#services" class="nav__link">Services</a></li>
+        <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+        <li><a href="submit.html" class="btn btn--accent nav__cta">Submit Your Music</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="section__eyebrow">Artist Submissions</p>
+        <h1 class="page-hero__title">SUBMIT YOUR <span class="accent">MUSIC</span></h1>
+        <p class="page-hero__sub">We listen to everything. Tell us who you are, where your music lives,
+        and what you&rsquo;re building next. Incomplete submissions can&rsquo;t be reviewed, so fill in every field.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container submit__grid">
+
+        <aside class="submit__aside reveal" aria-label="How submissions work">
+          <div class="submit__step">
+            <span class="submit__step-num" aria-hidden="true">1</span>
+            <div>
+              <h3>Send your best work</h3>
+              <p>Share a private streaming link (SoundCloud, Dropbox, etc.) — no large file attachments.</p>
+            </div>
+          </div>
+          <div class="submit__step">
+            <span class="submit__step-num" aria-hidden="true">2</span>
+            <div>
+              <h3>Tell us your story</h3>
+              <p>A short bio and your goals help us understand where the music could go.</p>
+            </div>
+          </div>
+          <div class="submit__step">
+            <span class="submit__step-num" aria-hidden="true">3</span>
+            <div>
+              <h3>We listen</h3>
+              <p>Our A&amp;R team reviews every submission. If it&rsquo;s a fit, we&rsquo;ll reach out directly.</p>
+            </div>
+          </div>
+          <p class="contact__placeholder-note">Demo form — not yet connected to a backend. Connect a form-processing
+          service before accepting real submissions, and never store secret API keys in frontend code.</p>
+        </aside>
+
+        <form class="form reveal" id="submissionForm" novalidate>
+          <div class="form__row">
+            <div class="form__field">
+              <label for="artistName">Artist / Project Name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="artistName" name="artistName" autocomplete="organization" required minlength="2" />
+              <p class="form__error" role="alert" hidden></p>
+            </div>
+            <div class="form__field">
+              <label for="contactPerson">Contact Person <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="contactPerson" name="contactPerson" autocomplete="name" required minlength="2" />
+              <p class="form__error" role="alert" hidden></p>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__field">
+              <label for="subEmail">Email Address <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="subEmail" name="email" autocomplete="email" required />
+              <p class="form__error" role="alert" hidden></p>
+            </div>
+            <div class="form__field">
+              <label for="country">Country <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="country" name="country" autocomplete="country-name" required minlength="2" />
+              <p class="form__error" role="alert" hidden></p>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__field">
+              <label for="genre">Music Genre <span class="req" aria-hidden="true">*</span></label>
+              <select id="genre" name="genre" required>
+                <option value="" selected disabled>Select a genre</option>
+                <option>Pop</option>
+                <option>Hip-Hop / Rap</option>
+                <option>R&amp;B / Soul</option>
+                <option>Electronic</option>
+                <option>Rock / Indie</option>
+                <option>Folk / Singer-Songwriter</option>
+                <option>Metal</option>
+                <option>Jazz</option>
+                <option>Classical / Score</option>
+                <option>Other</option>
+              </select>
+              <p class="form__error" role="alert" hidden></p>
+            </div>
+            <div class="form__field">
+              <label for="submissionType">Submission Type <span class="req" aria-hidden="true">*</span></label>
+              <select id="submissionType" name="submissionType" required>
+                <option value="" selected disabled>Select a type</option>
+                <option>Single</option>
+                <option>EP</option>
+                <option>Album</option>
+                <option>Demo / Unreleased Material</option>
+                <option>Production / Beats</option>
+                <option>Songwriting</option>
+              </select>
+              <p class="form__error" role="alert" hidden></p>
+            </div>
+          </div>
+
+          <div class="form__field">
+            <label for="streamingLinks">Streaming Profile Links</label>
+            <input type="url" id="streamingLinks" name="streamingLinks" placeholder="https://open.spotify.com/artist/..." />
+            <p class="form__error" role="alert" hidden></p>
+          </div>
+
+          <div class="form__field">
+            <label for="demoLink">Private Demo / Portfolio Link <span class="req" aria-hidden="true">*</span></label>
+            <input type="url" id="demoLink" name="demoLink" placeholder="https://soundcloud.com/... (private link)" required />
+            <p class="form__error" role="alert" hidden></p>
+          </div>
+
+          <div class="form__field">
+            <label for="bio">Short Artist Biography <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="bio" name="bio" rows="4" required minlength="30"
+              placeholder="Who are you, where are you from, and what does your music sound like?"></textarea>
+            <p class="form__error" role="alert" hidden></p>
+          </div>
+
+          <div class="form__field">
+            <label for="message">Message to the Label</label>
+            <textarea id="message" name="message" rows="4"
+              placeholder="What are you working toward? Upcoming releases, goals, anything that helps us understand your vision."></textarea>
+            <p class="form__error" role="alert" hidden></p>
+          </div>
+
+          <div class="form__field">
+            <div class="form__checkbox">
+              <input type="checkbox" id="consent" name="consent" required />
+              <label for="consent">I agree to the <a href="#">privacy notice</a> and consent to Qrecords
+              reviewing my submission and contacting me about it. <span class="req" aria-hidden="true">*</span></label>
+            </div>
+            <p class="form__error" role="alert" hidden></p>
+          </div>
+
+          <button type="submit" class="btn btn--accent btn--lg form__submit">
+            <span class="btn__label">Submit for Review</span>
+            <span class="btn__spinner" aria-hidden="true"></span>
+          </button>
+
+          <div class="form__success" role="status" hidden>
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="3"/><path d="M14 25l7 7 13-15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Submission received — thank you!</h3>
+            <p>This is a demo state: the form is not connected to a backend yet. Connect a secure form
+            service before accepting real submissions.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__bottom" style="border-top:none;">
+      <p>&copy; <span id="year">2026</span> Qrecords. All rights reserved.</p>
+      <p class="footer__legal"><a href="index.html#home">Back to Home</a> · <a href="#">Privacy Policy</a> · <a href="#">Terms</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
